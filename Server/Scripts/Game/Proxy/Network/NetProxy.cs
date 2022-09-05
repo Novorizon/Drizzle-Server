@@ -133,10 +133,10 @@ namespace Server
 
         protected void HandlerFunc(TCPClientState state, object data)
         {
-            C2S_Login req = data as C2S_Login;
+            C2S_Login_Req req = data as C2S_Login_Req;
             Console.WriteLine("C2S_Login");
 
-            S2C_LoginAck ack = new S2C_LoginAck()
+            S2C_Login_Ack ack = new S2C_Login_Ack()
             {
                 PlayerId = 1234
             };

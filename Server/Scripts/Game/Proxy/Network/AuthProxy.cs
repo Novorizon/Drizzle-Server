@@ -38,7 +38,7 @@ namespace Game
 
             //查找账号数据 验证
 
-            S2C_LoginAck ack = new S2C_LoginAck();
+            S2C_Login_Ack ack = new S2C_Login_Ack();
 
             messageProxy.SendMessage(client, ack);
         }
